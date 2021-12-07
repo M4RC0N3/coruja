@@ -1,0 +1,235 @@
+
+.App{ 
+    height: auto;
+    header{
+        width: 100vw;
+    }
+    .start{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    main{
+        display: flex;
+        /* background-color: #9595FF; */
+        position: relative;
+        width: auto;
+        height: auto;
+        .container{
+            background-image: linear-gradient(#9595FF, #5651FF);
+            
+            width: 100vw;
+            height: 100vh;
+            max-height: 1920px;
+            min-height: 600px;
+            img{
+                position: absolute;
+                filter: contrast(1.2);
+            }
+            .treeLeaves{
+                z-index: 20;  
+                height: 48%;    
+            }
+            .leavesRight{
+                z-index: 20;
+                right: 0;
+                height: 29%;
+            }
+            //Troncos
+            
+            .treeTrunks{
+                z-index: 10;               
+                height: 84%;   
+                left: 20px;
+                bottom: -5px;          
+            }         
+            .groupTrunks{
+               position: absolute;
+                width: 156vh;
+                min-width: 936px;
+                height: 100%;
+                left: 0;
+                .trunksContainter{
+                    position: absolute;
+                    right: 0;
+                    width: 57%;
+                    height: 100%;
+                    .midTrunk{
+                        z-index: 14;
+                        height: 77%;
+                        left: 0;
+                        bottom: -1%;
+                    }
+                    .lastTrunk{
+                        z-index: 12;
+                        height: 77%;
+                        left: 72%;
+                        bottom: -1%;
+                    }
+                }              
+            }  
+            //Moitas
+            .bushLeft{
+                z-index: 12;
+                bottom: 0;
+                left: 0;
+                height: 33%;
+            }
+            .bushRight{
+                z-index: 12;
+                bottom: 0;
+                right: 0;
+                height: 35.1%;
+            }
+            //Grama
+            .leftGrass{
+                z-index: 20;
+                left: -16px;
+                bottom: -2%;
+                height: 19%;
+            }
+            .grassRight{
+                z-index: 20;
+                right: 0;
+                bottom: -15px;
+                height: 14.5%;
+            }
+            
+            //Cipos
+            .vine1{
+                z-index: 14;
+                height: 16%;
+                top: 22%;
+                left: 0;
+            }
+            .vine2{
+                z-index: 14;
+                height: 21%;
+                top: 19%;
+                left: 6%;
+            }
+            .vine3{
+                z-index: 13;
+                height: 12%;
+                top: 28%;
+                left: 62vh;
+            }
+
+            .moon{
+                position: fixed;
+                top: 20px;
+                right: 53px;
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                /* background-color: red; */
+                background-image: radial-gradient(#a0a0ff, rgba(255, 255, 255,  .84));
+                box-shadow: 0 0 100px rgb(255, 255, 255);
+            }
+            .groupMark{
+                height: 100%;
+                width: auto;
+                position: absolute;
+                bottom: 0;
+                left: 190px;
+                .branchTrunk{               
+                    z-index: 15;
+                    /* width: 385px; */
+                    height: 75.5%;
+                    left: -13%;
+                    bottom: 0;
+                }
+                svg{
+                    z-index: 18;       
+                    position: absolute;     
+                    height: 60%;
+                    left: -8%;
+                    top: 18%;                
+                    g{
+                        path{
+                            filter: drop-shadow(0 0 2.75rem #ffffff);
+                            fill:#fff;
+                            /* animation: pisca .2s infinite; */
+                        }
+                        rect{
+                            fill: none;
+                        }
+                    }
+                }
+                
+                .circleCoruja{
+                    z-index: 14;        
+                    position: relative;       
+                    left: -7%;
+                    top: 14%;
+                    min-width: 386px;
+                    min-height: 383px;
+                    width: 60vh;                   
+                    height: 60vh;
+                    border-radius: 50%;
+                    border: 1vh solid #fff;
+                    filter: drop-shadow(0 0 1.75rem #ffffff);
+                   /*  animation: pisca .2s infinite; */
+                }
+            }
+
+            h1{ 
+                z-index: 13;
+                bottom: 8%;
+                left: .7%;
+                position: absolute;
+                color: #fff;
+                font-size: 18vh;
+                font-family: 'Open Sans', sans-serif;
+                
+            }    
+            .conversionContainer{
+                position: absolute;
+                z-index: 20;
+                display: flex;
+                right: 0;
+                width: 46%;
+                height: 100%;
+                align-items: center;
+                .conversion{
+                    width: 839px;
+                    height: auto;
+                    h2{
+                        font-family: 'SoleilBold', sans-serif;
+                        color: #fff;
+                        font-size: 4rem;
+                        right: 0;
+                        text-shadow: 0 0 20px #00000026;
+                    }
+                    .openContact{
+                        @include button();
+                        margin-top: 20px;
+                        width: 305px;
+                        height: 60px;
+                        background-image: linear-gradient(45deg, #ff877d, #ffb58a);
+                        box-shadow: 0 8px 30px rgba(255, 135, 125, .4);
+                        border-radius: 100px;
+                        font-family: 'SoleilBook', sans-serif;
+                        color: #fff;                       
+                        font-size: 1.85rem;
+                    }
+                } 
+            }  
+        }      
+    }
+    
+}
+@keyframes pisca {
+    to{
+        /* filter: brightness(20%); */
+        filter: drop-shadow(0);
+        fill: #172857;
+        border-color: #172857;
+    }
+    from{
+        filter: brightness(100%);
+        filter: drop-shadow(0 0 1.75rem #ffffff);
+        border-color: #fff;
+        fill: #fff;
+    }
+}

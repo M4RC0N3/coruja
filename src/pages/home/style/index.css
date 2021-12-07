@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  width: auto;
+  height: auto;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../../../assets/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'SoleilBook';
+  src: url(../../../assets/fonts/SoleilBook.otf);
+}
+
+@font-face {
+  font-family: 'SoleilBold';
+  src: url(../../../assets/fonts/SoleilBold.otf);
+}
+
+.App {
+  height: auto;
+}
+
+.App header {
+  width: 100vw;
+}
+
+.App .start {
+  width: 100vw;
+  height: 100vh;
+}
+
+.App main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* background-color: #9595FF; */
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.App main .container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9595FF), to(#5651FF));
+  background-image: linear-gradient(#9595FF, #5651FF);
+  width: 100vw;
+  height: 100vh;
+  max-height: 1920px;
+  min-height: 600px;
+}
+
+.App main .container img {
+  position: absolute;
+  -webkit-filter: contrast(1.2);
+          filter: contrast(1.2);
+}
+
+.App main .container .treeLeaves {
+  z-index: 20;
+  height: 48%;
+}
+
+.App main .container .leavesRight {
+  z-index: 20;
+  right: 0;
+  height: 29%;
+}
+
+.App main .container .treeTrunks {
+  z-index: 10;
+  height: 84%;
+  left: 20px;
+  bottom: -5px;
+}
+
+.App main .container .groupTrunks {
+  position: absolute;
+  width: 156vh;
+  min-width: 936px;
+  height: 100%;
+  left: 0;
+}
+
+.App main .container .groupTrunks .trunksContainter {
+  position: absolute;
+  right: 0;
+  width: 57%;
+  height: 100%;
+}
+
+.App main .container .groupTrunks .trunksContainter .midTrunk {
+  z-index: 14;
+  height: 77%;
+  left: 0;
+  bottom: -1%;
+}
+
+.App main .container .groupTrunks .trunksContainter .lastTrunk {
+  z-index: 12;
+  height: 77%;
+  left: 72%;
+  bottom: -1%;
+}
+
+.App main .container .bushLeft {
+  z-index: 12;
+  bottom: 0;
+  left: 0;
+  height: 33%;
+}
+
+.App main .container .bushRight {
+  z-index: 12;
+  bottom: 0;
+  right: 0;
+  height: 35.1%;
+}
+
+.App main .container .leftGrass {
+  z-index: 20;
+  left: -16px;
+  bottom: -2%;
+  height: 19%;
+}
+
+.App main .container .grassRight {
+  z-index: 20;
+  right: 0;
+  bottom: -15px;
+  height: 14.5%;
+}
+
+.App main .container .vine1 {
+  z-index: 14;
+  height: 16%;
+  top: 22%;
+  left: 0;
+}
+
+.App main .container .vine2 {
+  z-index: 14;
+  height: 21%;
+  top: 19%;
+  left: 6%;
+}
+
+.App main .container .vine3 {
+  z-index: 13;
+  height: 12%;
+  top: 28%;
+  left: 62vh;
+}
+
+.App main .container .moon {
+  position: fixed;
+  top: 20px;
+  right: 53px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  /* background-color: red; */
+  background-image: radial-gradient(#a0a0ff, rgba(255, 255, 255, 0.84));
+  -webkit-box-shadow: 0 0 100px white;
+          box-shadow: 0 0 100px white;
+}
+
+.App main .container .groupMark {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  left: 190px;
+}
+
+.App main .container .groupMark .branchTrunk {
+  z-index: 15;
+  /* width: 385px; */
+  height: 75.5%;
+  left: -13%;
+  bottom: 0;
+}
+
+.App main .container .groupMark svg {
+  z-index: 18;
+  position: absolute;
+  height: 60%;
+  left: -8%;
+  top: 18%;
+}
+
+.App main .container .groupMark svg g path {
+  -webkit-filter: drop-shadow(0 0 2.75rem #ffffff);
+          filter: drop-shadow(0 0 2.75rem #ffffff);
+  fill: #fff;
+  /* animation: pisca .2s infinite; */
+}
+
+.App main .container .groupMark svg g rect {
+  fill: none;
+}
+
+.App main .container .groupMark .circleCoruja {
+  z-index: 14;
+  position: relative;
+  left: -7%;
+  top: 14%;
+  min-width: 386px;
+  min-height: 383px;
+  width: 60vh;
+  height: 60vh;
+  border-radius: 50%;
+  border: 1vh solid #fff;
+  -webkit-filter: drop-shadow(0 0 1.75rem #ffffff);
+          filter: drop-shadow(0 0 1.75rem #ffffff);
+  /*  animation: pisca .2s infinite; */
+}
+
+.App main .container h1 {
+  z-index: 13;
+  bottom: 8%;
+  left: .7%;
+  position: absolute;
+  color: #fff;
+  font-size: 18vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.App main .container .conversionContainer {
+  position: absolute;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  width: 46%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App main .container .conversionContainer .conversion {
+  width: 839px;
+  height: auto;
+}
+
+.App main .container .conversionContainer .conversion h2 {
+  font-family: 'SoleilBold', sans-serif;
+  color: #fff;
+  font-size: 4rem;
+  right: 0;
+  text-shadow: 0 0 20px #00000026;
+}
+
+.App main .container .conversionContainer .conversion .openContact {
+  cursor: pointer;
+  border-style: none;
+  margin-top: 20px;
+  width: 305px;
+  height: 60px;
+  background-image: linear-gradient(45deg, #ff877d, #ffb58a);
+  -webkit-box-shadow: 0 8px 30px rgba(255, 135, 125, 0.4);
+          box-shadow: 0 8px 30px rgba(255, 135, 125, 0.4);
+  border-radius: 100px;
+  font-family: 'SoleilBook', sans-serif;
+  color: #fff;
+  font-size: 1.85rem;
+}
+
+@-webkit-keyframes pisca {
+  to {
+    /* filter: brightness(20%); */
+    -webkit-filter: drop-shadow(0);
+            filter: drop-shadow(0);
+    fill: #172857;
+    border-color: #172857;
+  }
+  from {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+    -webkit-filter: drop-shadow(0 0 1.75rem #ffffff);
+            filter: drop-shadow(0 0 1.75rem #ffffff);
+    border-color: #fff;
+    fill: #fff;
+  }
+}
+
+@keyframes pisca {
+  to {
+    /* filter: brightness(20%); */
+    -webkit-filter: drop-shadow(0);
+            filter: drop-shadow(0);
+    fill: #172857;
+    border-color: #172857;
+  }
+  from {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+    -webkit-filter: drop-shadow(0 0 1.75rem #ffffff);
+            filter: drop-shadow(0 0 1.75rem #ffffff);
+    border-color: #fff;
+    fill: #fff;
+  }
+}
+
+@media only screen and (max-width: 1574px) {
+  .App main .container .conversionContainer .conversion {
+    margin-top: 73px;
+  }
+  .App main .container .conversionContainer .conversion h2 {
+    font-size: 3rem;
+  }
+  .App main .container .conversionContainer .conversion .openContact {
+    width: 286px;
+    height: 57px;
+    font-size: 1.7rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
