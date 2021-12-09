@@ -345,6 +345,22 @@ body {
   font-family: 'SoleilBook', sans-serif;
   color: #fff;
   font-size: 1.85rem;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.App main .container .conversionContainer .conversion .openContact:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-box-shadow: 0 16px 40px rgba(255, 135, 125, 0.6);
+          box-shadow: 0 16px 40px rgba(255, 135, 125, 0.6);
+}
+
+.App main .container .conversionContainer .conversion .openContact:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-box-shadow: 0 8px 30px rgba(255, 135, 125, 0.4);
+          box-shadow: 0 8px 30px rgba(255, 135, 125, 0.4);
 }
 
 @-webkit-keyframes pisca {
@@ -380,20 +396,6 @@ body {
             filter: drop-shadow(0 0 1.75rem #ffffff);
     border-color: #fff;
     fill: #fff;
-  }
-}
-
-@media only screen and (max-width: 1574px) {
-  .App main .container .conversionContainer .conversion {
-    margin-top: 73px;
-  }
-  .App main .container .conversionContainer .conversion h2 {
-    font-size: 3rem;
-  }
-  .App main .container .conversionContainer .conversion .openContact {
-    width: 286px;
-    height: 57px;
-    font-size: 1.7rem;
   }
 }
 

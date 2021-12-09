@@ -225,6 +225,15 @@
                         font-family: 'SoleilBook', sans-serif;
                         color: #fff;                       
                         font-size: 1.85rem;
+                        transition: .3s ease-out;
+                        &:hover{
+                            transform: scale(1.07);
+                            box-shadow: 0 16px 40px rgba(255, 135, 125, .6);
+                        }
+                        &:active{
+                            transform: scale(.95);
+                            box-shadow: 0 8px 30px rgba(255, 135, 125, .4);
+                        }
                     }
                 } 
             }  

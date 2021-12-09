@@ -1,10 +1,16 @@
-.containerForm {
+.bgForm {
   position: fixed;
   z-index: 100;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: rgba(23, 40, 87, 0.5);
+  overflow: auto;
+}
+
+.bgForm .containerForm {
+  width: 100vw;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,11 +20,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow-y: scroll;
-  padding: 30px;
 }
 
-.containerForm .contentForm {
+.bgForm .containerForm .contentForm {
   width: 60%;
   height: auto;
   -webkit-box-sizing: border-box;
@@ -34,7 +38,7 @@
           align-items: center;
 }
 
-.containerForm .contentForm .form {
+.bgForm .containerForm .contentForm .form {
   -webkit-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
           box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
   width: 30vw;
@@ -44,7 +48,7 @@
   padding: 50px 30px;
 }
 
-.containerForm .contentForm .form .header {
+.bgForm .containerForm .contentForm .form .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,28 +62,28 @@
   height: 50px;
 }
 
-.containerForm .contentForm .form .header svg {
+.bgForm .containerForm .contentForm .form .header svg {
   width: 27px;
   height: auto;
 }
 
-.containerForm .contentForm .form .header button {
+.bgForm .containerForm .contentForm .form .header button {
   cursor: pointer;
   border-style: none;
   background-color: transparent;
 }
 
-.containerForm .contentForm .form .header button svg {
+.bgForm .containerForm .contentForm .form .header button svg {
   fill: #23375e;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
-.containerForm .contentForm .form .header button:hover > svg {
+.bgForm .containerForm .contentForm .form .header button:hover > svg {
   fill: #ff6b6b;
 }
 
-.containerForm .contentForm .form h3 {
+.bgForm .containerForm .contentForm .form h3 {
   font-family: 'SoleilBold', sans-serif;
   font-size: 2.5rem;
   max-width: 430px;
@@ -87,19 +91,19 @@
   color: #2a3459;
 }
 
-.containerForm .contentForm .form form {
+.bgForm .containerForm .contentForm .form form {
   /* background-color: #a0a0ff; */
   margin-top: 40px;
 }
 
-.containerForm .contentForm .form form label {
+.bgForm .containerForm .contentForm .form form label {
   font-family: 'SoleilBook', sans-serif;
   font-size: 1.5rem;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
 
-.containerForm .contentForm .form form input {
+.bgForm .containerForm .contentForm .form form input {
   outline: none;
   border: none;
   border-bottom: 2px solid #172857;
@@ -110,23 +114,23 @@
   transition: .3s ease;
 }
 
-.containerForm .contentForm .form form input:not(:placeholder-shown) ~ label {
+.bgForm .containerForm .contentForm .form form input:not(:placeholder-shown) ~ label {
   color: #6570FF;
 }
 
-.containerForm .contentForm .form form input:focus ~ label {
+.bgForm .containerForm .contentForm .form form input:focus ~ label {
   color: #6570FF;
 }
 
-.containerForm .contentForm .form form input:not(:placeholder-shown) {
+.bgForm .containerForm .contentForm .form form input:not(:placeholder-shown) {
   border-bottom: 2px solid #6570FF;
 }
 
-.containerForm .contentForm .form form input:focus {
+.bgForm .containerForm .contentForm .form form input:focus {
   border-bottom: 2px solid #6570FF;
 }
 
-.containerForm .contentForm .form form textarea {
+.bgForm .containerForm .contentForm .form form textarea {
   font-size: 1.2rem;
   outline: none;
   border: none;
@@ -139,23 +143,23 @@
   max-height: 180px;
 }
 
-.containerForm .contentForm .form form textarea:not(:placeholder-shown) ~ label {
+.bgForm .containerForm .contentForm .form form textarea:not(:placeholder-shown) ~ label {
   color: #6570FF;
 }
 
-.containerForm .contentForm .form form textarea:focus ~ label {
+.bgForm .containerForm .contentForm .form form textarea:focus ~ label {
   color: #6570FF;
 }
 
-.containerForm .contentForm .form form textarea:not(:placeholder-shown) {
+.bgForm .containerForm .contentForm .form form textarea:not(:placeholder-shown) {
   border-bottom: 2px solid #6570FF;
 }
 
-.containerForm .contentForm .form form textarea:focus {
+.bgForm .containerForm .contentForm .form form textarea:focus {
   border-bottom: 2px solid #6570FF;
 }
 
-.containerForm .contentForm .form form div {
+.bgForm .containerForm .contentForm .form form div {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,18 +171,18 @@
   margin-top: 20px;
 }
 
-.containerForm .contentForm .form form div p {
+.bgForm .containerForm .contentForm .form form div p {
   font-family: 'SoleilBook', sans-serif;
   margin-top: 6px;
   font-size: .9rem;
   color: #b6b6b6;
 }
 
-.containerForm .contentForm .form form div:first-child {
+.bgForm .containerForm .contentForm .form form div:first-child {
   margin-top: 0;
 }
 
-.containerForm .contentForm .form form button {
+.bgForm .containerForm .contentForm .form form button {
   cursor: pointer;
   border-style: none;
   margin-top: 50px;
@@ -204,22 +208,44 @@
   transition: .3s ease;
 }
 
-.containerForm .contentForm .form form button img {
+.bgForm .containerForm .contentForm .form form button img {
   width: 38px;
   height: auto;
 }
 
-.containerForm .contentForm .form form button:hover {
+.bgForm .containerForm .contentForm .form form button:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-box-shadow: 0 8px 24px rgba(23, 40, 87, 0.4);
           box-shadow: 0 8px 24px rgba(23, 40, 87, 0.4);
 }
 
-.containerForm .contentForm .form form button:active {
+.bgForm .containerForm .contentForm .form form button:active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
   -webkit-box-shadow: 0 8px 20px rgba(23, 40, 87, 0.2);
           box-shadow: 0 8px 20px rgba(23, 40, 87, 0.2);
 }
-/*# sourceMappingURL=style.css.map */
+
+@media only screen and (max-width: 1444px) {
+  .App .bgForm .containerForm .contentForm .form {
+    width: 500px;
+    min-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 563px) {
+  .App .bgForm .containerForm .contentForm {
+    padding: 21px 0;
+    width: 100%;
+    height: 100%;
+  }
+  .App .bgForm .containerForm .contentForm .form {
+    border-radius: 0;
+    overflow-y: overlay;
+    min-width: 246px;
+    width: 100%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

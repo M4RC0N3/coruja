@@ -1,0 +1,161 @@
+
+.bgForm{
+    $hoverLabel: #6570FF;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(23, 40, 87, .5);   
+    overflow: auto;
+    .containerForm{  
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contentForm{
+            width: 60%;
+            height: auto;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;    
+            align-items: center;        
+            .form{
+                box-shadow: 0 8px 24px rgba(0, 0, 0, .24);
+                width: 30vw;
+                height: 90%;
+                background-color: #fff;
+                border-radius: 12px;
+                padding: 50px 30px;
+                .header{     
+                    display: flex;
+                    align-items: start;
+                    justify-content: end;
+                    width: 100%;
+                    height: 50px;
+                    svg{
+                        width: 27px;
+                        height: auto;
+                    }
+                    button{
+                        @include button();
+                        background-color: transparent;
+                        svg{
+                            fill: #23375e;
+                            transition: .3s ease;
+                        }                       
+                        &:hover>svg{
+                            fill: #ff6b6b;
+                        }
+                    }
+                }
+                h3{
+                    font-family: 'SoleilBold', sans-serif;                 
+                    font-size: 2.5rem;
+                    max-width: 430px;
+                    width: auto;
+                    color: #2a3459;
+                }
+                form{
+                    /* background-color: #a0a0ff; */
+                    margin-top: 40px;
+                    label{
+                        font-family: 'SoleilBook', sans-serif;
+                        font-size: 1.5rem;
+                        transition: .3s ease;
+                    }
+                    input{
+                        outline: none;
+                        border: none;
+                        border-bottom: 2px solid #172857;
+                        font-family: 'SoleilBook', sans-serif;
+                        font-size: 1.2rem;
+                        margin-top: 20px;
+                        transition:.3s ease;
+                        &:not(:placeholder-shown)~label{
+                            color: $hoverLabel;
+                        }
+                        &:focus~label{
+                            color: $hoverLabel;
+                        }
+                        &:not(:placeholder-shown){
+                            border-bottom: 2px solid $hoverLabel;
+                        }
+                        &:focus{
+                            border-bottom: 2px solid $hoverLabel;
+                        }
+                    }
+                    
+                    textarea{
+                        font-size: 1.2rem;
+                        outline: none;
+                        border: none;
+                        resize: none;
+                        border-bottom: 2px solid #172857;
+                        font-family: 'SoleilBook', sans-serif;
+                        margin-top: 20px;
+                        overflow-y: auto;
+                        height: auto;
+                        max-height: 180px;
+                        &:not(:placeholder-shown)~label{
+                            color: $hoverLabel;
+                        }
+                        &:focus~label{
+                            color: $hoverLabel;
+                        }
+                        &:not(:placeholder-shown){
+                            border-bottom: 2px solid $hoverLabel;
+                        }
+                        &:focus{
+                            border-bottom: 2px solid $hoverLabel;
+                        }
+                    }
+                    div{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column-reverse;
+                        margin-top: 20px;
+                        p{
+                            font-family: 'SoleilBook', sans-serif;
+                            margin-top: 6px;
+                            font-size: .9rem;
+                            color: #b6b6b6;
+                        }                      
+                    }
+                    div:first-child{
+                        margin-top: 0;
+                    }
+                    button{
+                        @include button();
+                        margin-top: 50px;
+                        width: 188px;
+                        height: 61px;
+                        font-family: 'SoleilBook', sans-serif;
+                        background-color: #6570FF;
+                        border-radius: 10px;
+                        color: #fff;                       
+                        font-size: 1.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        box-shadow: 0 8px 24px rgba(23, 40, 87, .24);
+                        transition: .3s ease;
+                        img{
+                            width: 38px;
+                            height: auto;
+                        }
+                        &:hover{
+                            transform: scale(1.05);
+                            box-shadow: 0 8px 24px rgba(23, 40, 87, .40);
+                        }
+                        &:active{
+                            transform: scale(.95);
+                            box-shadow: 0 8px 20px rgba(23, 40, 87, .20);
+                        }
+                    }
+                }   
+            }
+        }
+    }   
+}
