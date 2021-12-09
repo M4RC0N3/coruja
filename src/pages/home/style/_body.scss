@@ -1,4 +1,3 @@
-
 .App{ 
     height: auto;
     header{
@@ -15,6 +14,8 @@
         position: relative;
         width: auto;
         height: auto;
+        box-sizing: border-box;
+        overflow: hidden;
         .container{
             background-image: linear-gradient(#9595FF, #5651FF);
             
@@ -35,8 +36,10 @@
                 right: 0;
                 height: 29%;
             }
-            //Troncos
-            
+            .leavesLeftR, .leavesRightR, .trunksLeftR, .trunkRightR, .grassRightR, .grassLeftR, .grassMidBackR, .grassMidR, .vine1R{
+                display: none;
+            }
+            //Troncos            
             .treeTrunks{
                 z-index: 10;               
                 height: 84%;   
@@ -44,12 +47,12 @@
                 bottom: -5px;          
             }         
             .groupTrunks{
-               position: absolute;
+                position: absolute;
                 width: 156vh;
                 min-width: 936px;
                 height: 100%;
                 left: 0;
-                .trunksContainter{
+                .trunksContainer{
                     position: absolute;
                     right: 0;
                     width: 57%;
@@ -132,6 +135,9 @@
                 position: absolute;
                 bottom: 0;
                 left: 190px;
+                .branchTrunkR{
+                    display: none;
+                }
                 .branchTrunk{               
                     z-index: 15;
                     /* width: 385px; */
@@ -200,6 +206,13 @@
                         font-size: 4rem;
                         right: 0;
                         text-shadow: 0 0 20px #00000026;
+                    }
+                    h3{
+                        font-family: 'SoleilRegular', sans-serif;
+                        color: #fff;
+                        max-width: 691px;
+                        font-size: 1.2rem;
+                        margin-top: 20px
                     }
                     .openContact{
                         @include button();

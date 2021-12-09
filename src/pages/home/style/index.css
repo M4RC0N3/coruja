@@ -64,6 +64,11 @@ body {
 }
 
 @font-face {
+  font-family: 'SoleilRegular';
+  src: url(../../../assets/fonts/SoleilRegular.otf);
+}
+
+@font-face {
   font-family: 'SoleilBook';
   src: url(../../../assets/fonts/SoleilBook.otf);
 }
@@ -94,6 +99,9 @@ body {
   position: relative;
   width: auto;
   height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
 }
 
 .App main .container {
@@ -122,6 +130,10 @@ body {
   height: 29%;
 }
 
+.App main .container .leavesLeftR, .App main .container .leavesRightR, .App main .container .trunksLeftR, .App main .container .trunkRightR, .App main .container .grassRightR, .App main .container .grassLeftR, .App main .container .grassMidBackR, .App main .container .grassMidR, .App main .container .vine1R {
+  display: none;
+}
+
 .App main .container .treeTrunks {
   z-index: 10;
   height: 84%;
@@ -137,21 +149,21 @@ body {
   left: 0;
 }
 
-.App main .container .groupTrunks .trunksContainter {
+.App main .container .groupTrunks .trunksContainer {
   position: absolute;
   right: 0;
   width: 57%;
   height: 100%;
 }
 
-.App main .container .groupTrunks .trunksContainter .midTrunk {
+.App main .container .groupTrunks .trunksContainer .midTrunk {
   z-index: 14;
   height: 77%;
   left: 0;
   bottom: -1%;
 }
 
-.App main .container .groupTrunks .trunksContainter .lastTrunk {
+.App main .container .groupTrunks .trunksContainer .lastTrunk {
   z-index: 12;
   height: 77%;
   left: 72%;
@@ -226,6 +238,10 @@ body {
   position: absolute;
   bottom: 0;
   left: 190px;
+}
+
+.App main .container .groupMark .branchTrunkR {
+  display: none;
 }
 
 .App main .container .groupMark .branchTrunk {
@@ -308,6 +324,14 @@ body {
   text-shadow: 0 0 20px #00000026;
 }
 
+.App main .container .conversionContainer .conversion h3 {
+  font-family: 'SoleilRegular', sans-serif;
+  color: #fff;
+  max-width: 691px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
 .App main .container .conversionContainer .conversion .openContact {
   cursor: pointer;
   border-style: none;
@@ -370,6 +394,236 @@ body {
     width: 286px;
     height: 57px;
     font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 1291px) {
+  .App main .container .groupMark .circleCoruja {
+    left: -16%;
+  }
+  .App main .container .conversionContainer {
+    min-width: 567px;
+  }
+  .App main .container .conversionContainer .conversion {
+    margin-top: 73px;
+  }
+  .App main .container .conversionContainer .conversion h2 {
+    font-size: 3rem;
+  }
+  .App main .container .conversionContainer .conversion .openContact {
+    width: 286px;
+    height: 57px;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 1218px) {
+  .App main .container .groupMark {
+    left: 16px;
+  }
+  .App main .container .groupMark .circleCoruja {
+    left: -16%;
+  }
+  .App main .container .conversionContainer {
+    min-width: 567px;
+  }
+  .App main .container .conversionContainer .conversion {
+    margin-top: 73px;
+  }
+  .App main .container .conversionContainer .conversion h2 {
+    font-size: 3rem;
+  }
+  .App main .container .conversionContainer .conversion .openContact {
+    width: 286px;
+    height: 57px;
+    font-size: 1.7rem;
+  }
+  .App main .container h1 {
+    left: 3.7%;
+  }
+}
+
+@media only screen and (max-width: 1037px) {
+  .App main .container .treeLeaves, .App main .container .leavesRight, .App main .container .midTrunk, .App main .container .treeTrunks, .App main .container .vine1, .App main .container .vine2, .App main .container .vine3, .App main .container .circleCoruja, .App main .container .leftGrass, .App main .container .grassRight, .App main .container h1 {
+    display: none;
+  }
+  .App main .container .leavesLeftR, .App main .container .leavesRightR, .App main .container .trunkRightR, .App main .container .trunksLeftR, .App main .container .grassRightR, .App main .container .grassLeftR, .App main .container .grassMidR, .App main .container .grassMidBackR, .App main .container .vine1R {
+    display: block;
+  }
+  .App main .container .leavesLeftR {
+    z-index: 20;
+    height: 38%;
+  }
+  .App main .container .leavesRightR {
+    z-index: 19;
+    right: 0;
+    height: 38%;
+  }
+  .App main .container .vine1R {
+    z-index: 10;
+    top: 15%;
+    height: 21%;
+    left: 12px;
+    width: 100%;
+  }
+  .App main .container .trunkRightR, .App main .container .trunksLeftR {
+    z-index: 10;
+    height: 84%;
+    bottom: -5px;
+  }
+  .App main .container .trunksLeftR {
+    left: -28px;
+  }
+  .App main .container .trunkRightR {
+    right: 56px;
+  }
+  .App main .container .groupTrunks {
+    width: 100%;
+    min-width: auto;
+  }
+  .App main .container .groupTrunks .trunksContainer .lastTrunk {
+    left: auto;
+    right: 0;
+  }
+  .App main .container .groupMark {
+    left: 0;
+  }
+  .App main .container .groupMark .branchTrunk {
+    display: none;
+  }
+  .App main .container .groupMark .branchTrunkR {
+    display: block;
+    z-index: 12;
+    height: 75.5%;
+    bottom: 0;
+    left: 35px;
+  }
+  .App main .container .groupMark svg {
+    height: 43%;
+    left: 45px;
+    top: 28.5%;
+  }
+  .App main .container .groupMark svg g .rab {
+    -webkit-transform: translateY(23px);
+            transform: translateY(23px);
+  }
+  .App main .container .bushLeft {
+    z-index: 13;
+    height: 21%;
+  }
+  .App main .container .bushRight {
+    z-index: 11;
+    height: 21.5%;
+    left: 3px;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .App main .container .grassRightR {
+    z-index: 12;
+    right: -10px;
+    bottom: -10px;
+    height: 12%;
+  }
+  .App main .container .grassLeftR {
+    z-index: 13;
+    left: -13px;
+    bottom: -10px;
+    height: 10%;
+  }
+  .App main .container .grassMidR {
+    z-index: 13;
+    left: 267px;
+    bottom: -10px;
+    height: 8%;
+  }
+  .App main .container .grassMidBackR {
+    z-index: 12;
+    left: 294px;
+    bottom: -10px;
+    height: 11%;
+  }
+  .App main .container .conversionContainer {
+    z-index: 25;
+    width: 100%;
+    min-width: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .App main .container .conversionContainer .conversion {
+    width: 78%;
+    max-width: 475px;
+    min-width: 464px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .App main .container .conversionContainer .conversion h2 {
+    font-size: 2.3rem;
+  }
+  .App main .container .conversionContainer .conversion h3 {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  .App main .container .moon {
+    right: 259px;
+  }
+}
+
+@media only screen and (max-width: 474px) {
+  .App main .container .conversionContainer .conversion {
+    width: 100%;
+    min-width: 0;
+  }
+  .App main .container .conversionContainer .conversion h2 {
+    font-size: 2.1rem;
+  }
+  .App main .container .conversionContainer .conversion h3 {
+    width: 94%;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .App main .container .conversionContainer .conversion h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .App main .container .conversionContainer .conversion h2 {
+    font-size: 1.8rem;
+  }
+  .App main .container .trunkRightR {
+    right: -45px;
+  }
+  .App main .container .trunksLeftR {
+    left: -37px;
+  }
+  .App main .container .groupTrunks .trunksContainer {
+    right: -41px;
+  }
+  .App main .container .groupMark {
+    left: -38px;
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 344px) {
+  .App main .container .conversionContainer .conversion {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=index.css.map */
