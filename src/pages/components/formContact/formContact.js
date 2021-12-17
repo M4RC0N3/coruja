@@ -17,7 +17,7 @@ export default function FormContact(props){
                 </button>              
               </div>
               <h3>Olá, vamos conversar sobre seu projeto.</h3>
-              <form action="">
+              <form action="" method='POST'>
                 <div className="name">
                   <input type="text" placeholder=" " required/>
                   <label>Qual seu nome ou nome da empresa ?</label>

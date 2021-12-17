@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/index.css';
 import ring from '../../../assets/images/ring.png';
-import mark from '../../../assets/images/mark.svg'
+import mark from '../../../assets/images/mark.svg';
 export default function Footer(props){
     return(
         <footer>
@@ -43,7 +43,7 @@ export default function Footer(props){
                 <div className="Copyright">
                     <p>© CORUJA todos os direitos reservados.</p>
                     <div className="socialMedia">
-                        <a className='instagram' href="https://www.instagram.com/tech.coruja/" target="_blank">
+                        <a className='instagram' href="https://www.instagram.com/tech.coruja/" target="_blank" rel="noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 427.82 427.82">
                                 <g id="Camada_2" data-name="Camada 2">
                                     <g id="Capa_1" data-name="Capa 1">
@@ -56,7 +56,7 @@ export default function Footer(props){
                                 </g>
                             </svg>
                         </a>
-                        <a className='github' href="https://github.com/dev-square" target="_blank">
+                        <a className='github' href="https://github.com/dev-square" target="_blank" rel="noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.55 427.82">
                                 <g id="Camada_2" data-name="Camada 2">
                                     <g id="Capa_1" data-name="Capa 1">

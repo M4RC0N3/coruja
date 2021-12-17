@@ -37,7 +37,7 @@ import FormContact from '../components/formContact/formContact';
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import './style/index.css';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 
 function Home() {
   const [props,setProps]=useState(false);
@@ -47,13 +47,13 @@ function Home() {
   function handleClose(){
     setProps((oldProps) => !oldProps);
   }
-  const [offset, setOffset]=useState(0);
+/*   const [offset, setOffset]=useState(0);
   useEffect(()=>{
     window.onscroll=()=>{
       setOffset(window.pageYOffset);
     }
   },[]);
-  console.log(offset); 
+  console.log(offset);  */
   return (
     <div className="App">
       <main>

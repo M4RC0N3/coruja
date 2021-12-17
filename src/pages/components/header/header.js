@@ -1,6 +1,5 @@
 import React from 'react';
-import './styles/index.css'
-import mark from '../../../assets/images/mark.svg'
+import './styles/index.css';
 export default function Header(){
     return(
         <header>
