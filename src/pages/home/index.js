@@ -33,13 +33,11 @@ import grassMidR from '../../assets/images/responsive/grassMid.svg';
 import grassMidBackR from '../../assets/images/responsive/grassMidBack.svg';
 import vine1R from '../../assets/images/responsive/vine1.svg';
 
-
-
-
 import FormContact from '../components/formContact/formContact';
-
+import Footer from '../components/footer/footer';
+import Header from '../components/header/header';
 import './style/index.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Home() {
   const [props,setProps]=useState(false);
@@ -49,10 +47,17 @@ function Home() {
   function handleClose(){
     setProps((oldProps) => !oldProps);
   }
+  const [offset, setOffset]=useState(0);
+  useEffect(()=>{
+    window.onscroll=()=>{
+      setOffset(window.pageYOffset);
+    }
+  },[]);
+  console.log(offset); 
   return (
     <div className="App">
-      <header></header>
       <main>
+        <Header></Header>
         <div className="container">
           {/* folhas */}
           <img className="treeLeaves" src={treeLeaves} alt="folhas da árvore" draggable="false"/>
@@ -120,14 +125,15 @@ function Home() {
               <h2>Coruja, a agência digital para seu negócio online.</h2>
               <h3>Somos sua agência digital focada em desenvolvimento de site, aplicativos, Design e gerenciamento de suas redes sociais.</h3>
               <button className="openContact" onClick={handleContactClick}>Vamos Conversar!</button>
-              <p>{props}</p>
             </div>
           </div>
         </div>
       </main>
       <FormContact value={props} close={handleClose}/>
+      <Footer value={props} open={handleContactClick}></Footer>
     </div>
   );
+
 }
 
 export default Home;

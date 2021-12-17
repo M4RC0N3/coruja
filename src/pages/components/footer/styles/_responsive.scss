@@ -1,0 +1,103 @@
+@media only screen and(max-width: 943px){
+    footer{
+        .background{
+            .conversionContainer{
+                .conversion{
+                    img{
+                        height: 641px;
+                        width: auto;
+                    }
+                    .content{
+                        h4{
+                            font-size: 3.6rem;
+                        }
+                        h5{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+        .subFooterContainer{
+            .subFooter{
+                .questions{
+                    margin-left: 299px;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 695px){
+    footer{
+        .background{
+            .conversionContainer{
+                .conversion{
+                    img{
+                        height: 95vw;
+                    }
+                    .content{
+                        width: 99%;
+                        top: 263px;
+                        h4{
+                            font-size: 8vw;
+                        }
+                        h5{
+                            font-size: 4vw;
+                        }
+                        .openContact{
+                            transform: scale(.8);
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .subFooterContainer{
+            .subFooter{
+                flex-direction: column;
+                align-content: center;
+                text-align: center;
+                img{
+                    margin: 20px 0 0 72px;
+                }
+                .questions, .services{
+                    margin-left: 0px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 512px){
+    footer{
+        .background{
+            height: 650px;
+            .conversionContainer{
+                .conversion{
+                    .content{
+                        top: 209px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 375px){
+    footer{
+        .background{
+            height: 650px;
+            .conversionContainer{
+                .conversion{
+                    .content{
+                        top: 230px;
+                        .openContact{
+                            width: 265px;
+                            transform: scale(.6);
+                            font-size: 1.65rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

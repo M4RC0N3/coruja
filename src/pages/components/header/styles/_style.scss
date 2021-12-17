@@ -1,0 +1,24 @@
+header{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    z-index: 30;
+    nav{
+        margin: 20px;
+        svg{
+            width: auto;
+            height: 50px;
+            g{
+                fill: #fff;
+                transition:all .2s ease;
+            }
+            
+            &:hover{
+                g{
+                    transition:all .2s ease;
+                    filter: drop-shadow(0 0 1rem #ffffff80);
+                }
+            }
+        }
+    }
+}

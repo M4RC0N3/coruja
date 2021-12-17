@@ -19,16 +19,16 @@ export default function FormContact(props){
               <h3>Olá, vamos conversar sobre seu projeto.</h3>
               <form action="">
                 <div className="name">
-                  <input type="text" placeholder=" "/>
+                  <input type="text" placeholder=" " required/>
                   <label>Qual seu nome ou nome da empresa ?</label>
                 </div>
                 
                 <div className="email">
-                  <input type="text" placeholder=" "/>
+                  <input type="text" placeholder=" " required/>
                   <label>Qual seu E-mail ?</label>
                 </div>
                 <div className="sobre">              
-                  <textarea placeholder=" " cols="30" rows="5"></textarea>
+                  <textarea placeholder=" " cols="30" rows="5" required></textarea>
                   <p>Importante falar sobre: a ideia, tempo e orçamento.</p>
                   <label>Conte-nos sobre seu projeto! </label>
                 </div>
