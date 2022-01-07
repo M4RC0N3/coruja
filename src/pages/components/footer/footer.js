@@ -11,7 +11,7 @@ export default function Footer(props){
                     <div className="conversion">
                         <img className='ring' src={ring} alt="anel de luz" draggable='false' />
                         <div className="content">
-                            <h4>Gostou do que viu? <br/> Você tambem pode ter.</h4>
+                            <h4>Gostou do que viu? <br/> Você também pode ter.</h4>
                             <h5>Nós realmente gostamos de criar coisas incríveis.<br/> Nos desafie o quanto quiser.</h5>
                             <button className="openContact" onClick={props.open}>Vamos Conversar!</button>
                         </div>         
