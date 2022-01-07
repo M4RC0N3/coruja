@@ -36,8 +36,14 @@ import vine1R from '../../assets/images/responsive/vine1.svg';
 import FormContact from '../components/formContact/formContact';
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
+
 import './style/index.css';
 import { useState} from 'react';
+import Lottie from 'lottie-react-web';
+import lamp from '../../assets/icons/animation/lamp.json';
+import rocket from '../../assets/icons/animation/rocket.json';
+import guindaste from '../../assets/icons/animation/guindaste.json';
+
 
 function Home() {
   const [props,setProps]=useState(false);
@@ -47,13 +53,6 @@ function Home() {
   function handleClose(){
     setProps((oldProps) => !oldProps);
   }
-/*   const [offset, setOffset]=useState(0);
-  useEffect(()=>{
-    window.onscroll=()=>{
-      setOffset(window.pageYOffset);
-    }
-  },[]);
-  console.log(offset);  */
   return (
     <div className="App">
       <main>
@@ -129,6 +128,27 @@ function Home() {
           </div>
         </div>
       </main>
+      
+      <div className="achievements">
+          <div className="lampContainer">
+            <p>Ideias inteligentes <br/> para seu negócio</p>
+            <Lottie className="lampIcon" options={{
+                animationData:lamp
+              }}/>
+          </div>
+          <div className="rocketContainer">
+            <p>Tiramos sua ideia do papel</p>
+            <Lottie options={{
+              animationData:rocket
+            }}/>
+          </div>
+          <div className="constructionContainer">
+            <p>Construção fiel e segura</p>
+            <Lottie options={{
+              animationData:guindaste
+            }}/>
+          </div>
+        </div>
       <FormContact value={props} close={handleClose}/>
       <Footer value={props} open={handleContactClick}></Footer>
     </div>

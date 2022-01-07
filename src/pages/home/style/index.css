@@ -78,6 +78,16 @@ body {
   src: url(../../../assets/fonts/SoleilBold.otf);
 }
 
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url(../../../assets/fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url(../../../assets/fonts/Raleway-Regular.ttf);
+}
+
 .App {
   height: auto;
 }
@@ -363,6 +373,55 @@ body {
           box-shadow: 0 8px 30px rgba(255, 135, 125, 0.4);
 }
 
+.App .achievements {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -11vh;
+  width: 900px;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.18);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 23px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* box-shadow: 0 8px 24px rgba(255, 255, 255, .24); */
+}
+
+.App .achievements p {
+  color: #fff;
+  font-family: 'Raleway-Medium';
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.App .achievements div {
+  width: 155px;
+  height: 144px;
+}
+
+.App .achievements div div {
+  height: 78% !important;
+}
+
+.App .achievements div div g path {
+  fill: #fff;
+  stroke: #fff;
+}
+
 @-webkit-keyframes pisca {
   to {
     /* filter: brightness(20%); */
@@ -582,6 +641,25 @@ body {
   }
   .App main .container .moon {
     right: 259px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .App .achievements {
+    width: 95%;
+    bottom: -16vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 538px) {
+  .App .achievements {
+    display: none;
   }
 }
 

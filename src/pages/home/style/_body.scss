@@ -239,7 +239,44 @@
             }  
         }      
     }
-    
+    .achievements{
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -11vh;
+        width: 900px;
+        height: 170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, .18);
+        backdrop-filter: blur(30px);
+        padding: 23px;
+        box-sizing: border-box;
+        /* box-shadow: 0 8px 24px rgba(255, 255, 255, .24); */
+        p{
+            color: #fff;
+            font-family: 'Raleway-Medium';
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        div{
+            width: 155px;
+            height: 144px;
+            div{
+                height: 78% !important;
+                g{
+                    path{
+                        fill: #fff;
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    } 
 }
 @keyframes pisca {
     to{
