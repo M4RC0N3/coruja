@@ -31,7 +31,7 @@ export default function Footer(props){
                         <p>Desenvolvimento web front-end</p>
                         <p>Design web responsivo</p>
                         <p>Landing Page</p>
-                        <p>Gerenciar de redes sociais</p>
+                        <p>Gerenciamento de social media</p>
                     </div>
                     <div className="questions">
                         <p className='title'>Dúvidas</p>
