@@ -610,9 +610,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
   }
   .App main .container .conversionContainer .conversion {
     width: 78%;
@@ -628,6 +625,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
