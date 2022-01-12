@@ -8,12 +8,14 @@
     height: auto;
     background-color: rgba(23, 40, 87, .5);   
     overflow: auto;
+    animation: bg .3s ease;
     .containerForm{  
         width: 100vw;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        animation: openForm .3s ease;
         .contentForm{
             width: 60%;
             height: auto;
@@ -150,11 +152,29 @@
                             box-shadow: 0 8px 24px rgba(23, 40, 87, .40);
                         }
                         &:active{
-                            transform: scale(.95);
+                            transform: scale(1);
                             box-shadow: 0 8px 20px rgba(23, 40, 87, .20);
                         }
                     }
                 }   
+            }
+        }
+        @keyframes openForm {
+            from{
+                opacity: 0;
+                transform: translateY(4px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes bg{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
             }
         }
     }   

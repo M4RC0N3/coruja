@@ -22,17 +22,21 @@ import leavesRight from '../../assets/images/leavesRight.svg';
   /* import vine4 from '../../assets/images/vine4.svg'; */
 
 //responsive
-import branchTrunkR from '../../assets/images/responsive/branchTrunk.svg';
-import leavesLeftR from '../../assets/images/responsive/leavesLeft.svg';
-import leavesRightR from '../../assets/images/responsive/leavesRight.svg';
-import trunksLeftR from '../../assets/images/responsive/trunksLeft.svg';
-import trunkRightR from '../../assets/images/responsive/trunkRight.svg';
-import grassRightR from '../../assets/images/responsive/grassRight.svg';
-import grassLeftR from '../../assets/images/responsive/grassLeft.svg';
-import grassMidR from '../../assets/images/responsive/grassMid.svg';
-import grassMidBackR from '../../assets/images/responsive/grassMidBack.svg';
-import vine1R from '../../assets/images/responsive/vine1.svg';
-
+  import branchTrunkR from '../../assets/images/responsive/branchTrunk.svg';
+  import leavesLeftR from '../../assets/images/responsive/leavesLeft.svg';
+  import leavesRightR from '../../assets/images/responsive/leavesRight.svg';
+  import trunksLeftR from '../../assets/images/responsive/trunksLeft.svg';
+  import trunkRightR from '../../assets/images/responsive/trunkRight.svg';
+  import grassRightR from '../../assets/images/responsive/grassRight.svg';
+  import grassLeftR from '../../assets/images/responsive/grassLeft.svg';
+  import grassMidR from '../../assets/images/responsive/grassMid.svg';
+  import grassMidBackR from '../../assets/images/responsive/grassMidBack.svg';
+  import vine1R from '../../assets/images/responsive/vine1.svg';
+//icon Animations
+  import lamp from '../../assets/icons/animation/lamp.json';
+  import rocket from '../../assets/icons/animation/rocket.json';
+  import guindaste from '../../assets/icons/animation/guindaste.json';
+//components
 import FormContact from '../components/formContact/formContact';
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
@@ -40,10 +44,6 @@ import Header from '../components/header/header';
 import './style/index.css';
 import { useState} from 'react';
 import Lottie from 'lottie-react-web';
-import lamp from '../../assets/icons/animation/lamp.json';
-import rocket from '../../assets/icons/animation/rocket.json';
-import guindaste from '../../assets/icons/animation/guindaste.json';
-
 
 function Home() {
   const [props,setProps]=useState(false);
