@@ -1,3 +1,31 @@
+@media only screen and(max-width:1700px){
+    .App{
+        .motivacao{
+            .grainBg{
+                height: 770px;
+                .grainOpacityBg{
+                    .content{
+                        .textContainer{
+                            width: 505px;
+                            h3{
+                                font-size: 2.5rem;
+                            }
+                            p{
+                                width: 443px;
+                                font-size: 1.1rem;                            
+                            }
+                        }
+                        .imgContainer{
+                            img{
+                                width: 600px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and(max-width: 1291px){
     .App {
         main {
@@ -56,6 +84,43 @@
                 }
             }                        
         } 
+        .motivacao{
+            .grainBg{
+                height: 1067px;
+                .grainOpacityBg{
+                    .content{
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .textContainer{
+                            position: relative;
+                            width: 90%;
+                            top: 101px;
+                            margin-left: 0;
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            h3{
+                                font-size: 3.5rem;
+                            }
+                            p{
+                                width: 70%;
+                                font-size: 1.3rem;                         
+                            }
+                        }
+                        .imgContainer{
+                            width: 100%;
+                            height: auto;
+                            justify-content: center;
+                            img{
+                                width: 91%;
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }   
 }
 @media only screen and(max-width: 1037px){
@@ -201,9 +266,41 @@
             width: 95%;
             bottom: -16vh;
             flex-wrap: wrap;
-            height: auto;
+            height:  146px;
             box-sizing: border-box;
             overflow: hidden;
+        }
+    }
+}
+@media only screen and(max-width: 682px){
+    .App{
+        .motivacao{
+            .grainBg{
+                height: 770px;
+                .grainOpacityBg{
+                    .content{
+                        .textContainer{
+                            width: 95%;
+                            h3{
+                                font-size: 2.5rem;
+                            }
+                            p{
+                                width: 100%;
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                    .tugleLeft{
+                        transform: scale(.5);
+                        left: -358px;
+                        bottom: -395px;
+                    }
+                    .tugleRight{
+                        transform: scale(.5);
+                        right: -361px;
+                    }
+                }
+            }
         }
     }
 }
@@ -221,6 +318,27 @@
         .achievements{
             display: none;
         }
+        .motivacao{
+            .grainBg{
+                height: 700px;
+                .grainOpacityBg{
+                    .content{
+                        .textContainer{
+                            width: 100%;
+                            box-sizing: border-box;
+                            padding: 0 5%;
+                            top: 28px;
+                            h3{
+                                font-size: 2.5rem;
+                            }
+                            p{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media only screen and(max-width: 474px){
@@ -236,6 +354,24 @@
                         }
                         h3{
                             width: 94%;
+                        }
+                    }
+                }
+            }
+        }
+        .motivacao{
+            .grainBg{
+                height: 661px;
+                .grainOpacityBg{
+                    background-image: none;
+                    .content{
+                        .textContainer{
+                            h3{
+                                font-size: 1.8rem;
+                            }
+                            p{
+                                font-size: 1rem;
+                            }
                         }
                     }
                 }
@@ -295,6 +431,23 @@
                 .conversionContainer{
                     .conversion{
                         margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .motivacao{
+            .grainBg{
+                height: 533px;
+                .grainOpacityBg{
+                    .content{
+                        .textContainer{
+                            h3{
+                                font-size: 1.8rem;
+                            }
+                            p{
+                                font-size: 1rem;
+                            }
+                        }
                     }
                 }
             }

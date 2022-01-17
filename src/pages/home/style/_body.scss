@@ -244,7 +244,7 @@
         z-index: 100;
         left: 50%;
         transform: translateX(-50%);
-        top: 94vh;
+        top: 92vh;
         width: 900px;
         height: auto;
         display: flex;
@@ -265,7 +265,7 @@
 
         div{
             width: 155px;
-            height: 144px;
+            height: 114px;
             div{
                 height: 78% !important;
                 g{
@@ -277,6 +277,132 @@
             }
         }
     } 
+    .motivacao{
+        width: 100vw;
+        height: auto;
+        .grainBg{
+            width: 100%;
+            height: 900px;
+            max-height: auto;
+            box-sizing: border-box;
+            overflow: hidden;
+            background-image: url(../../../assets/images/motivacao/grainBg.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            img{
+                position: absolute;
+            }
+            .purpleBall{
+                left: 50%;
+                transform: translateX(-50%);
+                top: -570px;
+            }
+            .blueBall{
+                top: 50%;
+                transform: translateY(-50%);
+                left: -740px;
+            }
+            .orangeBall{
+                right: -630px;
+                bottom: -285px;
+            }
+            .grainOpacityBg{
+                width: 100%;
+                height: 100%;
+                background-image: url(../../../assets/images/motivacao/grainOpacity.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                img{
+                    position: absolute;
+                    z-index: 99;
+                }                
+                .tugleLeft{
+                    left: -358px;
+                    bottom: -413px;
+                    transform: rotate(320deg);
+                    z-index: 90;
+                }
+                .tugleRight{
+                    z-index: 90;
+                    right: -293px;
+                    top: -331px;
+                    transform: rotate(60deg);
+                }
+                .layerLine{
+                    width: 100%;
+                    height: 100%;
+                    z-index: 95;
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                    padding: 0 10%;
+                    @mixin line {
+                        width: 1.5px;
+                        height: 100%;
+                        opacity: 35%;
+                        background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, .26));                    
+                    }
+                    .line1{
+                        @include line();
+                    }
+                    .line2{
+                        @include line();
+                    }
+                    .line3{
+                        @include line();
+                    }
+                    .line4{
+                        @include line();
+                    }
+                }
+                .content{
+                    position: absolute;
+                    z-index: 95;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .textContainer{
+                        /* max-width: 50%; */
+                        width: 700px;
+                        margin-left: 50px;
+                        h3{
+                            font-family: 'newOrderBold', sans-serif;
+                            color: #fff;
+                            font-size: 3.5rem;
+                            line-height: 1.45;
+                            span{
+                                color: #809bff;
+                            }
+                        }
+                        p{
+                            font-family: 'newOrderRegular', sans-serif;
+                            color: #fff;
+                            line-height: 1.6;
+                            width: 500px;
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .imgContainer{
+                        display: flex;
+                        width: calc(100% - 700px);
+                        height: 100%;
+                        align-items: center;
+                        justify-content: flex-end;
+                        img{
+                            position: initial;
+                            margin-right: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @keyframes pisca {
     to{
