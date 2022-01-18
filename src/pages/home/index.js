@@ -67,10 +67,8 @@ function Home() {
   
   const onScroll=()=>{
     const windowTop = window.pageYOffset;
-    console.log(windowTop);
     if(windowTop >= 400){
       setShow('show');
-      console.log(show);
     }
   }
   useEffect(()=>{
