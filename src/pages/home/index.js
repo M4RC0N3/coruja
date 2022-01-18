@@ -196,7 +196,7 @@ function Home() {
               </div>
               <div className="imgContainer">
                 {/* <img id = {show} src={internet} alt="internet" draggable="false" data-anime="up" /> */}
-                <Lottie className="conection" options={{
+                <Lottie className={"conection"} options={{
                   animationData:conection
                 }}/>
               </div>
