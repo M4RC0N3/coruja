@@ -58,6 +58,22 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar-track {
+  background-color: #091657;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #544d8f;
+  border-radius: 200px;
+  border-color: #131030;
+  border-style: solid;
+  border-width: 2.2px;
+}
+
 @font-face {
   font-family: 'Open Sans';
   src: url(../../../assets/fonts/OpenSans-Bold.ttf);
@@ -86,6 +102,16 @@ body {
 @font-face {
   font-family: 'Raleway-Regular';
   src: url(../../../assets/fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'newOrderBold';
+  src: url(../../../assets/fonts/newOrderBold.otf);
+}
+
+@font-face {
+  font-family: 'newOrderRegular';
+  src: url(../../../assets/fonts/newOrderRegular.otf);
 }
 
 .App {
@@ -379,7 +405,7 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 94vh;
+  top: 92vh;
   width: 900px;
   height: auto;
   display: -webkit-box;
@@ -410,7 +436,7 @@ body {
 
 .App .achievements div {
   width: 155px;
-  height: 144px;
+  height: 114px;
 }
 
 .App .achievements div div {
@@ -420,6 +446,186 @@ body {
 .App .achievements div div g path {
   fill: #fff;
   stroke: #fff;
+}
+
+.App .motivacao {
+  width: 100vw;
+  height: auto;
+}
+
+.App .motivacao .grainBg {
+  width: 100%;
+  height: 900px;
+  max-height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  background-image: url(../../../assets/images/motivacao/grainBg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.App .motivacao .grainBg img {
+  position: absolute;
+}
+
+.App .motivacao .grainBg .purpleBall {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -570px;
+}
+
+.App .motivacao .grainBg .blueBall {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -740px;
+}
+
+.App .motivacao .grainBg .orangeBall {
+  right: -630px;
+  bottom: -285px;
+}
+
+.App .motivacao .grainBg .grainOpacityBg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../assets/images/motivacao/grainOpacity.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.App .motivacao .grainBg .grainOpacityBg img {
+  position: absolute;
+  z-index: 99;
+}
+
+.App .motivacao .grainBg .grainOpacityBg .tugleLeft {
+  left: -358px;
+  bottom: -413px;
+  -webkit-transform: rotate(320deg);
+          transform: rotate(320deg);
+  z-index: 90;
+}
+
+.App .motivacao .grainBg .grainOpacityBg .tugleRight {
+  z-index: 90;
+  right: -293px;
+  top: -331px;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.App .motivacao .grainBg .grainOpacityBg .layerLine {
+  width: 100%;
+  height: 100%;
+  z-index: 95;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10%;
+}
+
+.App .motivacao .grainBg .grainOpacityBg .layerLine .line1 {
+  width: 1.5px;
+  height: 100%;
+  opacity: 35%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.26)));
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0.26));
+}
+
+.App .motivacao .grainBg .grainOpacityBg .layerLine .line2 {
+  width: 1.5px;
+  height: 100%;
+  opacity: 35%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.26)));
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0.26));
+}
+
+.App .motivacao .grainBg .grainOpacityBg .layerLine .line3 {
+  width: 1.5px;
+  height: 100%;
+  opacity: 35%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.26)));
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0.26));
+}
+
+.App .motivacao .grainBg .grainOpacityBg .layerLine .line4 {
+  width: 1.5px;
+  height: 100%;
+  opacity: 35%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.26)));
+  background-image: linear-gradient(white, rgba(255, 255, 255, 0.26));
+}
+
+.App .motivacao .grainBg .grainOpacityBg .content {
+  position: absolute;
+  z-index: 95;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.App .motivacao .grainBg .grainOpacityBg .content .textContainer {
+  /* max-width: 50%; */
+  width: 700px;
+  margin-left: 50px;
+}
+
+.App .motivacao .grainBg .grainOpacityBg .content .textContainer h3 {
+  font-family: 'newOrderBold', sans-serif;
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 1.45;
+}
+
+.App .motivacao .grainBg .grainOpacityBg .content .textContainer h3 span {
+  color: #809bff;
+}
+
+.App .motivacao .grainBg .grainOpacityBg .content .textContainer p {
+  font-family: 'newOrderRegular', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  width: 500px;
+  font-size: 1.3rem;
+}
+
+.App .motivacao .grainBg .grainOpacityBg .content .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 700px);
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.App .motivacao .grainBg .grainOpacityBg .content .imgContainer img {
+  position: initial;
+  margin-right: 50px;
 }
 
 @-webkit-keyframes pisca {
@@ -455,6 +661,54 @@ body {
             filter: drop-shadow(0 0 1.75rem #ffffff);
     border-color: #fff;
     fill: #fff;
+  }
+}
+
+#show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+[data-anime] {
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+[data-anime="left"] {
+  opacity: 0;
+  -webkit-transform: translate3d(-7px, 0, 0);
+          transform: translate3d(-7px, 0, 0);
+}
+
+[data-anime="right"] {
+  opacity: 0;
+  -webkit-transform: translate3d(7px, 0, 0);
+          transform: translate3d(7px, 0, 0);
+}
+
+[data-anime="up"] {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 7px, 0);
+          transform: translate3d(0, 7px, 0);
+}
+
+@media only screen and (max-width: 1700px) {
+  .App .motivacao .grainBg {
+    height: 770px;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer {
+    width: 505px;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer h3 {
+    font-size: 2.5rem;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer p {
+    width: 443px;
+    font-size: 1.1rem;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .imgContainer img {
+    width: 600px;
   }
 }
 
@@ -501,6 +755,53 @@ body {
   }
   .App main .container h1 {
     left: 3.7%;
+  }
+  .App .motivacao .grainBg {
+    height: 1067px;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer {
+    position: relative;
+    width: 90%;
+    top: 101px;
+    margin-left: 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer h3 {
+    font-size: 3.5rem;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer p {
+    width: 70%;
+    font-size: 1.3rem;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .imgContainer {
+    width: 100%;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .imgContainer img {
+    width: 91%;
+    margin-right: 0;
   }
 }
 
@@ -649,10 +950,37 @@ body {
     bottom: -16vh;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: auto;
+    height: 146px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 682px) {
+  .App .motivacao .grainBg {
+    height: 770px;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer {
+    width: 95%;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer h3 {
+    font-size: 2.5rem;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .tugleLeft {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    left: -358px;
+    bottom: -395px;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .tugleRight {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    right: -361px;
   }
 }
 
@@ -662,6 +990,22 @@ body {
   }
   .App .achievements {
     display: none;
+  }
+  .App .motivacao .grainBg {
+    height: 700px;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 5%;
+    top: 28px;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer h3 {
+    font-size: 2.5rem;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer p {
+    font-size: 1.2rem;
   }
 }
 
@@ -675,6 +1019,18 @@ body {
   }
   .App main .container .conversionContainer .conversion h3 {
     width: 94%;
+  }
+  .App .motivacao .grainBg {
+    height: 620px;
+  }
+  .App .motivacao .grainBg .grainOpacityBg {
+    background-image: none;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer h3 {
+    font-size: 1.8rem;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer p {
+    font-size: 1rem;
   }
 }
 
@@ -706,6 +1062,15 @@ body {
 @media only screen and (max-width: 344px) {
   .App main .container .conversionContainer .conversion {
     margin-bottom: 20px;
+  }
+  .App .motivacao .grainBg {
+    height: 533px;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer h3 {
+    font-size: 1.8rem;
+  }
+  .App .motivacao .grainBg .grainOpacityBg .content .textContainer p {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
