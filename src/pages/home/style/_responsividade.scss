@@ -178,7 +178,7 @@
                         align-self: flex-end;
                         text-align: center;
                         margin-top: 0;
-                        margin-bottom: 50px;
+                        margin-bottom: 81px;
                         h2{
                             font-size: 2.3rem;
                         }
@@ -209,6 +209,15 @@
 }
 @media only screen and(max-width:538px){
     .App{
+        main{
+            .container{
+                .conversionContainer{
+                    .conversion{
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
         .achievements{
             display: none;
         }

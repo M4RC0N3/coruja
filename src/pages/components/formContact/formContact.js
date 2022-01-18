@@ -1,8 +1,21 @@
-import React from 'react';
+import {React,useRef} from 'react';
+import emailjs from 'emailjs-com';
 import arrowRight from '../../../assets/icons/arrowRight.svg';
 import './styles/index.css';
-
 export default function FormContact(props){
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_tr3hi92', 'template_w7uphqf', form.current, 'user_YGwliSvDWOjZORKriv5KC')
+      .then(() => {
+        alert('Email enviado com sucesso! Aguarde e entraremos em contato');
+      }, (error) => {
+        alert('Ocorreu um erro ao enviar o email.')
+      });
+      e.target.reset();
+    
+  };
+  
   if(props.value){
     return(
       <div className="bgForm">
@@ -17,22 +30,22 @@ export default function FormContact(props){
                 </button>              
               </div>
               <h3>Olá, vamos conversar sobre seu projeto.</h3>
-              <form action="" method='POST'>
+              <form ref ={form} onSubmit={sendEmail}>
                 <div className="name">
-                  <input type="text" placeholder=" " required/>
-                  <label>Qual seu nome ou nome da empresa ?</label>
+                  <input type="text" name="name" placeholder=" " required/>
+                  <label>Qual seu nome ou nome da empresa?</label>
                 </div>
                 
                 <div className="email">
-                  <input type="text" placeholder=" " required/>
-                  <label>Qual seu E-mail ?</label>
+                  <input type="email" name="email" placeholder=" " required/>
+                  <label>Qual seu E-mail?</label>
                 </div>
                 <div className="sobre">              
-                  <textarea placeholder=" " cols="30" rows="5" required></textarea>
+                  <textarea placeholder=" " name="message" cols="30" rows="5" required></textarea>
                   <p>Importante falar sobre: a ideia, tempo e orçamento.</p>
                   <label>Conte-nos sobre seu projeto! </label>
                 </div>
-                <button>Enviar
+                <button type='submint'>Enviar
                   <img src={arrowRight} alt="Icone de enviar" draggable="false"/>
                 </button>
               </form>

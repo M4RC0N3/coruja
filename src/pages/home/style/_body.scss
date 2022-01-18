@@ -244,16 +244,16 @@
         z-index: 100;
         left: 50%;
         transform: translateX(-50%);
-        bottom: -11vh;
+        top: 94vh;
         width: 900px;
-        height: 170px;
+        height: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-radius: 20px;
+        border-radius: 16px;
         background-color: rgba(255, 255, 255, .18);
         backdrop-filter: blur(30px);
-        padding: 23px;
+        padding: 15px 14px 11px 11px;
         box-sizing: border-box;
         /* box-shadow: 0 8px 24px rgba(255, 255, 255, .24); */
         p{
