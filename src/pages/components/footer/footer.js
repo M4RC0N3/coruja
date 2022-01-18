@@ -27,8 +27,8 @@ export default function Footer(props){
                         <p className='title'>Serviços</p>
                         <p>Web design e desenvolvimento</p>
                         <p>Design e desenvolvimento de aplicativos</p>
-                        <p>Desenvolvimento web back-end</p>
-                        <p>Desenvolvimento web front-end</p>
+                        <p>Desenvolvimento back-end</p>
+                        <p>Desenvolvimento front-end</p>
                         <p>Design web responsivo</p>
                         <p>Landing Page</p>
                         <p>Gerenciamento de social media</p>

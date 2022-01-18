@@ -664,6 +664,35 @@ body {
   }
 }
 
+#show {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+[data-anime] {
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+[data-anime="left"] {
+  opacity: 0;
+  -webkit-transform: translate3d(-7px, 0, 0);
+          transform: translate3d(-7px, 0, 0);
+}
+
+[data-anime="right"] {
+  opacity: 0;
+  -webkit-transform: translate3d(7px, 0, 0);
+          transform: translate3d(7px, 0, 0);
+}
+
+[data-anime="up"] {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 7px, 0);
+          transform: translate3d(0, 7px, 0);
+}
+
 @media only screen and (max-width: 1700px) {
   .App .motivacao .grainBg {
     height: 770px;
@@ -992,7 +1021,7 @@ body {
     width: 94%;
   }
   .App .motivacao .grainBg {
-    height: 661px;
+    height: 620px;
   }
   .App .motivacao .grainBg .grainOpacityBg {
     background-image: none;
