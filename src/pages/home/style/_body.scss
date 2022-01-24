@@ -394,8 +394,14 @@
                         height: 100%;
                         align-items: center;
                         justify-content: flex-end;
-                        .conection{
-                            background-color: #ffb58a;
+                        .contectionContainer{
+                            width: 1200px;
+                            height: 100%;
+                            position: relative;
+                            div{
+                                position: absolute;
+                                right: 0;
+                            }                         
                         }
                     }
                 }

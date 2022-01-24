@@ -30,10 +30,11 @@ export default function Motivation(){
                     </div>
                     <div className="imgContainer" id={Scroll()} data-anime="up">
                         {/* <img id = {show} src={internet} alt="internet" draggable="false" data-anime="up" /> */}
-                       
-                        <Lottie className={"conection"} options={{
-                        animationData:conection
-                        }}/>
+                       <div className="contectionContainer">
+                            <Lottie className={"conection"} options={{
+                                animationData:conection                              
+                            }}/>
+                       </div>                    
                     </div>
                     </div>
                 </div>

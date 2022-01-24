@@ -631,8 +631,15 @@ body {
           justify-content: flex-end;
 }
 
-.App .motivacao .grainBg .grainOpacityBg .content .imgContainer .conection {
-  background-color: #ffb58a;
+.App .motivacao .grainBg .grainOpacityBg .content .imgContainer .contectionContainer {
+  width: 1200px;
+  height: 100%;
+  position: relative;
+}
+
+.App .motivacao .grainBg .grainOpacityBg .content .imgContainer .contectionContainer div {
+  position: absolute;
+  right: 0;
 }
 
 @-webkit-keyframes pisca {
@@ -713,9 +720,6 @@ body {
   .App .motivacao .grainBg .grainOpacityBg .content .textContainer p {
     width: 443px;
     font-size: 1.1rem;
-  }
-  .App .motivacao .grainBg .grainOpacityBg .content .imgContainer img {
-    width: 600px;
   }
 }
 
@@ -801,14 +805,10 @@ body {
   }
   .App .motivacao .grainBg .grainOpacityBg .content .imgContainer {
     width: 100%;
-    height: auto;
+    height: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .App .motivacao .grainBg .grainOpacityBg .content .imgContainer img {
-    width: 91%;
-    margin-right: 0;
   }
 }
 
