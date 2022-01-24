@@ -286,7 +286,7 @@
             max-height: auto;
             box-sizing: border-box;
             overflow: hidden;
-            background-image: url(../../../assets/images/motivacao/grainBg.png);
+            background-image: url(../../../assets/images/motivacao/grainBg.webp);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -311,7 +311,7 @@
             .grainOpacityBg{
                 width: 100%;
                 height: 100%;
-                background-image: url(../../../assets/images/motivacao/grainOpacity.png);
+                background-image: url(../../../assets/images/motivacao/grainOpacity.webp);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -373,7 +373,7 @@
                         margin-left: 50px;
                         h3{
                             font-family: 'newOrderBold', sans-serif;
-                            color: #fff;
+                            color: #ffffff;
                             font-size: 3.5rem;
                             line-height: 1.45;
                             span{
@@ -394,9 +394,8 @@
                         height: 100%;
                         align-items: center;
                         justify-content: flex-end;
-                        img{
-                            position: initial;
-                            margin-right: 50px;
+                        .conection{
+                            background-color: #ffb58a;
                         }
                     }
                 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/index.css';
-import ring from '../../../assets/images/ring.png';
+import ring from '../../../assets/images/ring.webp';
 import mark from '../../../assets/images/mark.svg';
 export default function Footer(props){
     return(
@@ -9,7 +9,7 @@ export default function Footer(props){
             <div className="background">
                 <div className="conversionContainer">
                     <div className="conversion">
-                        <img className='ring' src={ring} alt="anel de luz" draggable='false' />
+                        <img className='ring' src={ring} alt="anel de luz" width='200' height='200' draggable='false' />
                         <div className="content">
                             <h4>Gostou do que viu? <br/> Você também pode ter.</h4>
                             <h5>Nós realmente gostamos de criar coisas incríveis.<br/> Nos desafie o quanto quiser.</h5>
@@ -22,7 +22,7 @@ export default function Footer(props){
             </div>
             <div className="subFooterContainer">
                 <div className="subFooter">
-                    <img src={mark} alt="Marca coruja" draggable='false' />
+                    <img src={mark} alt="Marca coruja" width='200' height='200' draggable='false' />
                     <div className="services">
                         <p className='title'>Serviços</p>
                         <p>Web design e desenvolvimento</p>

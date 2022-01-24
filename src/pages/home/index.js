@@ -1,3 +1,5 @@
+import { useState} from 'react';
+
 import treeLeaves from '../../assets/images/treeLeaves.svg';
 import leavesRight from '../../assets/images/leavesRight.svg';
 
@@ -36,26 +38,19 @@ import leavesRight from '../../assets/images/leavesRight.svg';
   import lamp from '../../assets/icons/animation/lamp.json';
   import rocket from '../../assets/icons/animation/rocket.json';
   import guindaste from '../../assets/icons/animation/guindaste.json';
-//section-moticacao
-  import purpleBall from '../../assets/images/motivacao/purpleBall.png';
-  import blueBall from '../../assets/images/motivacao/blueBall.png';
-  import orangeBall from '../../assets/images/motivacao/orangeBall.png';
-  import tugleLeft from '../../assets/images/motivacao/tugleLeft.png';
-  import tugleRight from '../../assets/images/motivacao/tugleRight.png';
-  import internet from '../../assets/images/motivacao/internet.png';
-  import conection from '../../assets/images/motivacao/conection.json';
+
 //components
 import FormContact from '../components/formContact/formContact';
-import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
+import Motivation from './sections/motivation';
+import Footer from '../components/footer/footer';
 
 import './style/index.css';
-import { useState, useEffect} from 'react';
+
 import Lottie from 'lottie-react-web';
 
 function Home() {
-  const [props,setProps]=useState(false);
-  const [show, setShow] = useState('hidden');  
+  const [props,setProps]=useState(false);  
 
   const handleContactClick = ()=>{
     setProps(true)
@@ -64,18 +59,6 @@ function Home() {
   function handleClose(){
     setProps((oldProps) => !oldProps);
   }
-  
-  const onScroll=()=>{
-    const windowTop = window.pageYOffset;
-    if(windowTop >= 400){
-      setShow('show');
-    }
-  }
-  useEffect(()=>{
-    window.addEventListener('scroll', function(){
-      onScroll();
-    })  
-  });
   return (
     <div className="App">
       <main>
@@ -172,36 +155,7 @@ function Home() {
             }}/>
           </div>
       </div>
-      <section className='motivacao'>
-        <div className="grainBg">
-          <img className='purpleBall' src={purpleBall} alt="bola roxa" draggable="false"/>
-          <img className='blueBall' src={blueBall} alt="bola azul" draggable="false"/>
-          <img className='orangeBall' src={orangeBall} alt="bola laranja" draggable="false"/>
-          
-          <div className="grainOpacityBg"> 
-            <img className='tugleLeft' src={tugleLeft} alt="rosca da esquerda" draggable="false" />
-            <img className='tugleRight' src={tugleRight} alt="rosca da direita" draggable="false" /> 
-            <div className="layerLine">
-              <div className="line1"></div>
-              <div className="line2"></div>
-              <div className="line3"></div>   
-              <div className="line4"></div>   
-            </div>
-            <div className="content">
-              <div className="textContainer" id={show} data-anime="left">
-                <h3>Uma equipe <span>apaixonada</span> em tornar sua presença na internet impactante.</h3>
-                <p>Em meio a vastidão da internet, somos capazes de dar face original e criar posicionamento para a marca do seu negócio.</p>
-              </div>
-              <div className="imgContainer">
-                {/* <img id = {show} src={internet} alt="internet" draggable="false" data-anime="up" /> */}
-                <Lottie className={"conection"} options={{
-                  animationData:conection
-                }}/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Motivation/>
       <FormContact value={props} close={handleClose}/>
       <Footer value={props} open={handleContactClick}></Footer>
     </div>

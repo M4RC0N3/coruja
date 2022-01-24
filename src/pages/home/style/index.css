@@ -77,41 +77,49 @@ body {
 @font-face {
   font-family: 'Open Sans';
   src: url(../../../assets/fonts/OpenSans-Bold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'SoleilRegular';
   src: url(../../../assets/fonts/SoleilRegular.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'SoleilBook';
   src: url(../../../assets/fonts/SoleilBook.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'SoleilBold';
   src: url(../../../assets/fonts/SoleilBold.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Raleway-Medium';
   src: url(../../../assets/fonts/Raleway-Medium.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Raleway-Regular';
   src: url(../../../assets/fonts/Raleway-Regular.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'newOrderBold';
   src: url(../../../assets/fonts/newOrderBold.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'newOrderRegular';
   src: url(../../../assets/fonts/newOrderRegular.otf);
+  font-display: swap;
 }
 
 .App {
@@ -460,7 +468,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
-  background-image: url(../../../assets/images/motivacao/grainBg.png);
+  background-image: url(../../../assets/images/motivacao/grainBg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -493,7 +501,7 @@ body {
 .App .motivacao .grainBg .grainOpacityBg {
   width: 100%;
   height: 100%;
-  background-image: url(../../../assets/images/motivacao/grainOpacity.png);
+  background-image: url(../../../assets/images/motivacao/grainOpacity.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -592,7 +600,7 @@ body {
 
 .App .motivacao .grainBg .grainOpacityBg .content .textContainer h3 {
   font-family: 'newOrderBold', sans-serif;
-  color: #fff;
+  color: #ffffff;
   font-size: 3.5rem;
   line-height: 1.45;
 }
@@ -623,9 +631,8 @@ body {
           justify-content: flex-end;
 }
 
-.App .motivacao .grainBg .grainOpacityBg .content .imgContainer img {
-  position: initial;
-  margin-right: 50px;
+.App .motivacao .grainBg .grainOpacityBg .content .imgContainer .conection {
+  background-color: #ffb58a;
 }
 
 @-webkit-keyframes pisca {
@@ -689,8 +696,8 @@ body {
 
 [data-anime="up"] {
   opacity: 0;
-  -webkit-transform: translate3d(0, 7px, 0);
-          transform: translate3d(0, 7px, 0);
+  -webkit-transform: translate3d(0, 10px, 0);
+          transform: translate3d(0, 10px, 0);
 }
 
 @media only screen and (max-width: 1700px) {
