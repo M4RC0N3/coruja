@@ -2,11 +2,13 @@
   "name": "page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://m4rc0n3.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^3.2.3",
     "lottie-react-web": "^2.2.2",
     "lottie-web": "^5.8.1",
     "react": "^17.0.2",
